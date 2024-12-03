@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #0d1117, #161b22);
+    color: #c9d1d9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #161b22;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0d1117;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #c9d1d9;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #58a6ff;
+}
+
+section {
+    padding: 20px;
+}
+
+.projects, .certifications, .about, .social-media, .contact, .skills {
+    margin-bottom: 40px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #21262d;
+    color: #c9d1d9;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #0d1117;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 5px;
+    }
+}
+
+/* Style for Social Media Icons */
+.social-media img, .social-media .medium-icon, .social-media svg {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.social-media li {
+    margin-bottom: 10px;
+}
